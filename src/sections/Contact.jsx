@@ -15,6 +15,11 @@ const Contact = () => {
           className="w-8 h-8 hover:text-blue-700 cursor-pointer"
           />
           </a>
+          <a href="https://github.com/UdomHorn/">
+          <FontAwesomeIcon icon={faGithub}
+          className="w-8 h-8 hover:text-white cursor-pointer"
+          />
+          </a>
           <a href="">
           <FontAwesomeIcon icon={faLinkedin}
           className="w-8 h-8 hover:text-blue-700 cursor-pointer"
@@ -23,11 +28,6 @@ const Contact = () => {
           <a href="">
           <FontAwesomeIcon icon={faTelegram}
           className="w-8 h-8 hover:text-blue-500 cursor-pointer"
-          />
-          </a>
-          <a href="https://github.com/UdomHorn/">
-          <FontAwesomeIcon icon={faGithub}
-          className="w-8 h-8 hover:text-white cursor-pointer"
           />
           </a>
           </div>
