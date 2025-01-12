@@ -16,7 +16,7 @@ const Hightlight = () => {
                         <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
         
     
-                        <div>
+                        <div title="HTML CSS and Responsive">
                         <p className=" font-bold ">YouTube Clone</p>
                         <a href="https://udomhorn.github.io/Youtube-clone/">
                           <img src="youtube.png"alt="" />
@@ -38,7 +38,7 @@ const Hightlight = () => {
                       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
         
     
-                        <div>
+                        <div title="HTML CSS and Responsive">
                         <p className=" font-bold ">Education Clone</p>
                         <a href="https://edford-web.vercel.app/">
                           <img src="education.png"alt="" />
@@ -49,9 +49,9 @@ const Hightlight = () => {
                       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
         
     
-                        <div>
+                        <div title="HTML, CSS Mobile Responsive">
                         <p className=" font-bold ">Facebook Clone</p>
-                        <a href="https://udomhorn.github.io/Youtube-clone/">
+                        <a href="https://facebook-kappa-steel.vercel.app/">
                           <img src="facebook-app-symbol.png"alt="" />
                         </a>
                         </div>
