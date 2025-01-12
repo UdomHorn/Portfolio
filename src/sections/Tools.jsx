@@ -6,7 +6,7 @@ const Tools = () => {
       <h1 className="  text-4xl font-medium pb-8 text-black ">Tools I Use</h1>
       <div  className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
 
-      <div className=" gap-8 m-4 grid max-md:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 " >
+      <div className=" gap-8 m-4 grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 " >
         <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-200">
       <FontAwesomeIcon icon={faHtml5}
       className="w-8 h-8 hover:text-orange-600"
