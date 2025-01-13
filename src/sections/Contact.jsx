@@ -20,12 +20,12 @@ const Contact = () => {
           className="w-8 h-8 hover:text-white cursor-pointer"
           />
           </a>
-          <a href="">
+          <a href="https://www.linkedin.com/in/horn-udom-9a66b52aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
           <FontAwesomeIcon icon={faLinkedin}
           className="w-8 h-8 hover:text-blue-700 cursor-pointer"
           />
           </a>
-          <a href="">
+          <a href="https://t.me/uudxm">
           <FontAwesomeIcon icon={faTelegram}
           className="w-8 h-8 hover:text-blue-500 cursor-pointer"
           />
