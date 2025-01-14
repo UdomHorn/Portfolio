@@ -4,12 +4,12 @@ import { faHtml5,faCss3,faJs,faReact,faCss,faGithub, faYoutube} from "@fortaweso
 const Hightlight = () => {
   return (
     <div id="work" className="font-Inter">
-      <h1 className="  text-4xl font-medium pb-8 text-black ">Portfolio Hightlights</h1>
+      <h1 className="  text-4xl font-medium pb-8 text-black ">Portfolio Hightlights </h1>
       
                 <div  className="flex  justify-center items-center  bg-gray-100 rounded-md px-8 py-8 ">
             
                 <div className=" m-4 " >
-                <p className="font-medium text-lg mt-4  text-gray-600 text-center ">Works that I've done.</p>
+                <p className="font-medium text-lg mt-4  text-black text-center ">Works that I've done.</p><span className="flex justify-center underline text-sm text-gray-600 ">Click items to explor</span>
                 <div  className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
                 
                       <div className=" gap-8 m-4 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 " >
