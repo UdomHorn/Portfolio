@@ -6,7 +6,7 @@ const Hightlight = () => {
     <div id="work" className="font-Inter">
       <h1 className="  text-4xl font-medium pb-8 text-black ">Portfolio Hightlights</h1>
       
-                <div  className="flex  justify-center items-center  bg-gray-100 rounded-md pt-8 py-8 ">
+                <div  className="flex  justify-center items-center  bg-gray-100 rounded-md px-8 py-8 ">
             
                 <div className=" m-4 " >
                 <p className="font-medium text-lg mt-4  text-gray-600 text-center ">Works that I've done.</p>

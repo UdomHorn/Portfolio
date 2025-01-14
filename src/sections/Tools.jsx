@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHtml5,faCss3,faJs,faReact,faCss,faGithub} from "@fortawesome/free-brands-svg-icons"
 const Tools = () => {
   return (
-    <div id="skill" className=" max-sm:p-2 font-Inter">
+    <div id="skill" className=" font-Inter">
       <h1 className="  text-4xl font-medium pb-8 text-black ">Tools I Use</h1>
       <div  className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
 
