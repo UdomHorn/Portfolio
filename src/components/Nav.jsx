@@ -17,10 +17,11 @@ const Nav = () => {
           />
         </a>
         <ul className="flex-1 flex justify-center font-Inter text-black text-lg max-sm:hidden">
-          <li className=" flex   gap-16  ">
-            <a className="hover:text-gray-500 " href="#about">About</a>
+          <li className=" flex   gap-12  ">
+            <a className="hover:text-gray-500 " href="#home">Home</a>
             <a className="hover:text-gray-500" href="#skill">Skill</a>
             <a className="hover:text-gray-500" href="#project">Project</a>
+            <a className="hover:text-gray-500" href="#about">About</a>
             <a className="hover:text-gray-500"href="#contact">Contact</a>
           </li>
         </ul>
@@ -30,9 +31,10 @@ const Nav = () => {
         <div className= {`absolute top-14 pb-4 left-0 w-full text-center sm:hidden font-Inter text-black text-lg bg-white shadow-md ">
           <li className="list-none flex flex-col gap-4 ${isMenuOpen ? "opacity-100": "opacity-0"}`}>
 
-            <a className="hover:text-gray-500" href="#about">About</a>
+            <a className="hover:text-gray-500" href="#home">Home</a>
             <a className="hover:text-gray-500" href="#skill">Skill</a>
             <a className="hover:text-gray-500" href="#project">Project</a>
+            <a className="hover:text-gray-500" href="#about">About</a>
             <a className="hover:text-gray-500" href="#contact">Contact</a>
           </div>
 

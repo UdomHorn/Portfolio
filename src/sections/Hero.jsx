@@ -2,7 +2,7 @@
 
 const Hero = () => {
   return (
-    <section id="about" className=" sm:px-16  px-8  pt-28 flex max-md:flex-col gap-20 justify-center items-center  font-Inter">
+    <section id="home" className=" sm:px-16  px-8  pt-28 flex max-md:flex-col gap-20 justify-center items-center  font-Inter">
 
       <div className="  text-start md:w-2/3 ">
 
