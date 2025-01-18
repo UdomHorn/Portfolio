@@ -26,8 +26,8 @@ const Project = () => {
 
                         <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
                         <div title="HTML CSS and Responsive">
-                        <p className=" font-bold ">YouTube Clone (Tutorial)</p>
-                        <a href="https://udomhorn.github.io/Youtube-clone/">
+                        <p className=" font-bold ">YouTube Clone (Coming soon...)</p>
+                        <a href="">
                           <img src="youtube.png"alt="" />
                         </a>
                         </div>
