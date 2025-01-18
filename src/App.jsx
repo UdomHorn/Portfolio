@@ -1,25 +1,27 @@
 
-import {Hero, Tools, Hightlight, Contact, Footer} from "./sections";
+import {Hero, Skill, Project, Contact, Footer} from "./sections";
 import Nav from "./components/Nav";
 const App = () => {
   return (
+    
     <main className="relative">
       <section >
       <Nav /> 
       </section>
-      <section className="sm:pl-16 sm:pr-16  pl-8 pr-8 pb-12 pt-12">
+
+      <section >
         <Hero />
       </section>
-      <section className="sm:pl-16 sm:pr-16  pl-8 pr-8 pb-12   ">
-        <Tools />
+      <section className="  ">
+        <Skill />
       </section>
-      <section className="sm:pl-16 sm:pr-16  pl-8 pr-8 pb-12">
-        <Hightlight />
+      <section className="">
+        <Project />
       </section>
-      <section className="sm:pl-16 sm:pr-16  pl-8 pr-8 pb-12 ">
+      <section className="">
         <Contact />
       </section>
-      <section className=" bg-black flex justify-center  p-8 ">
+      <section className=" ">
         <Footer />
       </section>
     </main>

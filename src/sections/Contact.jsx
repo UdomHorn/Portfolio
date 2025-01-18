@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub, faFacebookSquare, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons"
 const Contact = () => {
   return (
-    <div id="contact" className=" font-Inter">
+    <div id="contact" className=" font-Inter sm:px-16 px-8 pt-28 pb-28 sm:pb-56">
           <h1 className="  text-4xl font-medium pb-8 text-black ">Feel Free To Contact Me</h1>
 
           <div  className="flex  justify-center items-center  bg-gray-100 rounded-md pt-8 py-8 ">

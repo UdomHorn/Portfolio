@@ -1,13 +1,13 @@
 import Hero from "./Hero"
-import Tools from "./Tools"
-import Hightlight from "./Hightlight"
+import Skill from "./Skill"
+import Project from "./Project"
 import Contact from "./Contact"
 import Footer from "./Footer"
 
 export {
   Hero,
-  Tools, 
-  Hightlight, 
+  Skill, 
+  Project, 
   Contact,
   Footer
 }

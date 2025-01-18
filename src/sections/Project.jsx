@@ -1,15 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHtml5,faCss3,faJs,faReact,faCss,faGithub, faYoutube} from "@fortawesome/free-brands-svg-icons"
 
-const Hightlight = () => {
+const Project = () => {
   return (
-    <div id="work" className="font-Inter">
+    <div id="project" className="font-Inter sm:px-16 px-8 pt-28">
       <h1 className="  text-4xl font-medium pb-8 text-black ">Portfolio Hightlights </h1>
       
                 <div  className="flex  justify-center items-center  bg-gray-100 rounded-md px-8 py-8 ">
             
                 <div className=" m-4 " >
-                <p className="font-medium text-lg mt-4  text-black text-center ">Works that I've done.</p><span className="flex justify-center underline text-sm text-gray-600 ">Click on each item to explor</span>
+                <p className="font-medium text-lg mt-4  text-black text-center ">Works that I've done.</p><span className="flex justify-center underline text-sm text-gray-600 ">Click on each item to explore</span>
                 <div  className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
                 
                       <div className=" gap-8 m-4 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 " >
@@ -78,4 +78,4 @@ const Hightlight = () => {
   )
 }
 
-export default Hightlight
+export default Project
