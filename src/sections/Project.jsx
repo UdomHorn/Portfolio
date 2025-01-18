@@ -62,8 +62,8 @@ const Project = () => {
       </div>
       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
                         <div>
-                        <p className=" font-bold ">Nike Clone (Coming Soon...)</p>
-                        <a href="">
+                        <p className=" font-bold ">Nike (Working...)</p>
+                        <a href="https://my-nike-jet.vercel.app/">
                           <img src="basketball.png"alt="" />
                         </a>
                         </div>
