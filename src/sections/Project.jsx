@@ -4,7 +4,7 @@ import { faHtml5,faCss3,faJs,faReact,faCss,faGithub, faYoutube} from "@fortaweso
 const Project = () => {
   return (
     <div id="project" className="font-Inter sm:px-16 px-8 pt-28">
-      <h1 className="  text-4xl font-medium pb-8 text-black ">Portfolio Hightlights </h1>
+      <h1 className="  text-4xl font-medium pb-8 text-black ">Project Hightlights </h1>
       
                 <div  className="flex  justify-center items-center  bg-gray-100 rounded-md px-8 py-8 ">
             
@@ -45,7 +45,7 @@ const Project = () => {
                 
                       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
                         <div>
-                        <p className=" font-bold ">Telegram Clone(Unavailable)</p>
+                        <p className=" font-bold ">Telegram Clone(Coming Soon...)</p>
                         <a href="">
                           <img src="telegram.png"alt="" />
                         </a>
@@ -54,7 +54,7 @@ const Project = () => {
                 
                       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
         <div>
-        <p className=" font-bold ">Amazon Clone (Unavailable)</p>
+        <p className=" font-bold ">Amazon Clone (Coming Soon...)</p>
         <a href="">
           <img src="logo.png"alt="" />
         </a>
@@ -62,7 +62,7 @@ const Project = () => {
       </div>
       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
                         <div>
-                        <p className=" font-bold ">Nike Clone (Unavailable)</p>
+                        <p className=" font-bold ">Nike Clone (Coming Soon...)</p>
                         <a href="">
                           <img src="basketball.png"alt="" />
                         </a>

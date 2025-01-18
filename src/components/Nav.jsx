@@ -13,7 +13,7 @@ const Nav = () => {
           <img 
           src="cartoon.png"
           alt="Logo"
-          className="w-[50px] h-[50px]"
+          className="w-[50px] h-[50px] hover:scale-105 transition-all"
           />
         </a>
         <ul className="flex-1 flex justify-center font-Inter text-black text-lg max-sm:hidden">
