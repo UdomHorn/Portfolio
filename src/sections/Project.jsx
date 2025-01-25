@@ -16,8 +16,8 @@ const Project = () => {
             
 
                       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-300 p-4 hover:scale-105 transition-all">
-        <div title="Facebook">
-        <p className=" font-bold ">HTML CSS Mobile Responsive</p>
+        <div title="Facebook Profile">
+        <p className=" font-bold ">HTML CSS Only Mobile Responsive</p>
         <a href="https://facebook-kappa-steel.vercel.app/">
           <img src="facebook-app-symbol.png"alt="" />
         </a>

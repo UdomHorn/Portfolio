@@ -8,7 +8,7 @@ const Nav = () => {
   return (
     <header className="sm:px-16 px-8  w-full  fixed top-0 py-1 mb-32 bg-white shadow-lg z-10 font-Inter">
       <div className="flex justify-between items-center ">
-      <a className="font-semibold text-2xl hover:scale-110 transition-all pr-2"href="\">Udom</a>
+      <a className=" flex font-semibold text-2xl hover:scale-110 transition-all pr-2 h-[50px] items-center "href="\">Udom</a>
 
         <ul className="flex-1 flex justify-center font-Inter text-black text-lg max-sm:hidden">
           <li className=" flex   gap-12  ">
@@ -20,7 +20,7 @@ const Nav = () => {
           </li>
         </ul>
        
-        <i  className="bx bx-menu hidden max-sm:block  text-black text-4xl cursor-pointer hover:scale-110 transition-all" onClick={()=> setIsMenuOpen(!isMenuOpen)}></i>
+        <i  className=" bx bx-menu hidden max-sm:block  text-black text-4xl cursor-pointer hover:scale-110 transition-all" onClick={()=> setIsMenuOpen(!isMenuOpen)}></i>
 
         <div className= {`absolute top-14 pb-4 left-0 w-full text-center sm:hidden font-Inter text-black text-lg bg-white shadow-md ">
           <li className="list-none flex flex-col gap-4 ${isMenuOpen ? "opacity-100": "opacity-0"}`}>
