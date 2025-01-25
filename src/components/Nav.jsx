@@ -6,15 +6,10 @@ const Nav = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
-    <header className="sm:px-16 px-8  w-full  fixed top-0 py-1 mb-32 bg-white shadow-lg z-10 ">
+    <header className="sm:px-16 px-8  w-full  fixed top-0 py-1 mb-32 bg-white shadow-lg z-10 font-Inter">
       <div className="flex justify-between items-center ">
-        <a href="/">
-          <img 
-          src="cartoon.png"
-          alt="Logo"
-          className="w-[50px] h-[50px] hover:scale-105 transition-all"
-          />
-        </a>
+      <a className="font-semibold text-2xl hover:scale-110 transition-all pr-2"href="\">Udom</a>
+
         <ul className="flex-1 flex justify-center font-Inter text-black text-lg max-sm:hidden">
           <li className=" flex   gap-12  ">
             <a className="hover:text-gray-500 hover:scale-110 transition-all" href="#home">Home</a>
