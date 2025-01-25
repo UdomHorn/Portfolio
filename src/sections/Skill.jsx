@@ -8,7 +8,8 @@ const Skill = () => {
       <div  className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
 
       <div className=" gap-8 m-4 grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 " >
-        <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-200">
+
+        <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faHtml5}
       className="w-8 h-8 hover:text-orange-600"
       />
@@ -18,7 +19,7 @@ const Skill = () => {
         </div>
       </div>
 
-      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-200">
+      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faCss3}
       className="w-8 h-8 hover:text-blue-500"
       />
@@ -28,7 +29,7 @@ const Skill = () => {
         </div>
       </div>
 
-      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-200">
+      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faJs}
       className="w-8 h-8 hover:text-yellow-300 hover:bg-black"
       />
@@ -38,7 +39,7 @@ const Skill = () => {
         </div>
       </div>
 
-      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-200">
+      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faReact}
       className="w-8 h-8 hover:text-sky-500"
       />
@@ -48,7 +49,7 @@ const Skill = () => {
         </div>
       </div>
 
-      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-200">
+      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faCss}
       className="w-8 h-8 hover:text-sky-500"
       />
@@ -58,7 +59,7 @@ const Skill = () => {
         </div>
       </div>
 
-      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-200">
+      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faGithub}
       className="w-8 h-8 hover:text-white"
       />

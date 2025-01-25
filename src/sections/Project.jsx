@@ -15,33 +15,36 @@ const Project = () => {
                       <div className=" gap-8 m-4 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 " >
             
 
-                      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
-        <div title="HTML, CSS Mobile Responsive">
-        <p className=" font-bold ">Facebook Clone (Own)</p>
+                      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-300 p-4 hover:scale-105 transition-all">
+        <div title="Facebook">
+        <p className=" font-bold ">HTML CSS Mobile Responsive</p>
         <a href="https://facebook-kappa-steel.vercel.app/">
           <img src="facebook-app-symbol.png"alt="" />
         </a>
         </div>
       </div>
 
-                        <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
-                        <div title="HTML CSS and Responsive">
-                        <p className=" font-bold ">YouTube Clone (Coming soon...)</p>
-                        <a href="">
-                          <img src="youtube.png"alt="" />
-                        </a>
-                        </div>
-                      </div>
-              
-                      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
-                        <div title="HTML CSS and Responsive">
-                        <p className=" font-bold ">Education Clone (Tutorial)</p>
+      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-300 p-4 hover:scale-105 transition-all">
+                        <div title="University Website">
+                        <p className=" font-bold ">HTML CSS Following Tutorial</p>
                         <a href="https://edford-web.vercel.app/">
                           <img src="education.png"alt="" />
                         </a>
                         </div>
                       </div>
-                
+
+      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-red-100 p-4 hover:scale-105 transition-all">
+                        <div title="Nike Website">
+                        <p className=" font-bold ">React Js and Tailwind Responsive</p>
+                        <a href="https://my-nike-jet.vercel.app/">
+                          <img src="basketball.png"alt="" />
+                        </a>
+                        </div>
+                      </div>
+              
+                      
+
+                {/* 
                 
                       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
                         <div>
@@ -60,15 +63,16 @@ const Project = () => {
         </a>
         </div>
       </div>
+
       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
-                        <div>
-                        <p className=" font-bold ">Nike (Working...)</p>
-                        <a href="https://my-nike-jet.vercel.app/">
-                          <img src="basketball.png"alt="" />
+                        <div title="HTML CSS and Responsive">
+                        <p className=" font-bold ">YouTube Clone (Coming soon...)</p>
+                        <a href="">
+                          <img src="youtube.png"alt="" />
                         </a>
                         </div>
                       </div>
-                      
+                    */}  
                 
                     </div>
                     </div>
