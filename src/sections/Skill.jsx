@@ -4,7 +4,9 @@ import { faCartPlus } from "@fortawesome/free-solid-svg-icons"
 const Skill = () => {
   return (
     <div id="skill" className=" sm:px-16 px-8 pt-28 font-Inter">
+      
       <h1 className="  text-4xl font-medium pb-8 text-black ">My Skill</h1>
+      
       <div  className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
 
       <div className=" gap-8 m-4 grid  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 " >
