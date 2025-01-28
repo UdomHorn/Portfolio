@@ -13,17 +13,17 @@ const Skill = () => {
 
         <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faHtml5}
-      className="w-8 h-8 hover:text-orange-600"
+      className="w-8 h-8 ml-1 hover:text-orange-600 "
       />
-        <div>
-        <p className=" font-bold ">HTML</p>
+        <div className="">
+        <p className=" font-bold  ">HTML</p>
         <p className="font-medium text-lg  text-gray-600 ">Structure</p>
         </div>
       </div>
 
       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faCss3}
-      className="w-8 h-8 hover:text-blue-500"
+      className="w-8 h-8 ml-1 hover:text-blue-500 "
       />
         <div>
         <p className=" font-bold ">CSS</p>
@@ -33,7 +33,7 @@ const Skill = () => {
 
       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faJs}
-      className="w-8 h-8 hover:text-yellow-300 hover:bg-black"
+      className="w-8 h-8 ml-1 hover:text-yellow-300 hover:bg-black"
       />
         <div>
         <p className=" font-bold ">Java Script</p>
@@ -43,7 +43,7 @@ const Skill = () => {
 
       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faReact}
-      className="w-8 h-8 hover:text-sky-500"
+      className="w-8 h-8 ml-1 hover:text-sky-500"
       />
         <div>
         <p className=" font-bold ">React Js</p>
@@ -53,7 +53,7 @@ const Skill = () => {
 
       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faCss}
-      className="w-8 h-8 hover:text-sky-500"
+      className="w-8 h-8 ml-1 hover:text-sky-500"
       />
         <div>
         <p className=" font-bold ">Tailwind</p>
@@ -63,7 +63,7 @@ const Skill = () => {
 
       <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-44 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
       <FontAwesomeIcon icon={faGithub}
-      className="w-8 h-8 hover:text-white"
+      className="w-8 h-8 ml-1 hover:text-white"
       />
         <div>
         <p className=" font-bold ">Github</p>
