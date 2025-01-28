@@ -4,7 +4,7 @@ import { faHtml5,faCss3,faJs,faReact,faCss,faGithub, faYoutube} from "@fortaweso
 const Project = () => {
   return (
     <div id="project" className="font-Inter sm:px-16 px-8 pt-28">
-      <h1 className="  text-4xl font-medium pb-8 text-black ">Project Hightlights </h1>
+      <h1 className="  text-4xl font-medium pb-8 text-black flex justify-center ">Project Hightlights </h1>
       
                 <div  className="flex  justify-center items-center  bg-gray-100 rounded-md px-8 py-8 ">
             

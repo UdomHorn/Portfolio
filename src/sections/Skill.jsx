@@ -5,7 +5,7 @@ const Skill = () => {
   return (
     <div id="skill" className=" sm:px-16 px-8 pt-28 font-Inter">
       
-      <h1 className="  text-4xl font-medium pb-8 text-black ">My Skill</h1>
+      <h1 className="  text-4xl font-medium pb-8 text-black flex justify-center  ">My Skill</h1>
       
       <div  className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
 
