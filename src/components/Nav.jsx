@@ -19,11 +19,16 @@ const Nav = () => {
             <a className="hover:text-gray-500 hover:scale-110 transition-all"href="#contact">Contact</a>
           </li>
         </ul>
-       
-        <i  className=" bx bx-menu hidden max-sm:block  text-black text-4xl cursor-pointer hover:scale-110 transition-all" onClick={()=> setIsMenuOpen(!isMenuOpen)}></i>
 
-        <div className= {`absolute top-14 pb-4 left-0 w-full text-center sm:hidden font-Inter text-black text-lg bg-white shadow-md ">
-          <li className="list-none flex flex-col gap-4 ${isMenuOpen ? "opacity-100": "opacity-0"}`}>
+        
+
+        <div className="flex gap-1 ">
+        <a href="https://github.com/UdomHorn/"><i  className=" bx bxl-github  text-black text-4xl cursor-pointer hover:scale-110 transition-all "></i></a>
+
+        <i  className=" bx bx-menu hidden max-sm:block  text-black text-4xl cursor-pointer hover:scale-110 transition-all" onClick={()=> setIsMenuOpen(!isMenuOpen)}></i>
+        </div>
+
+        <div className= {`absolute top-14 pb-4 left-0 w-full text-center sm:hidden font-Inter text-black text-lg bg-white shadow-md list-none flex flex-col gap-4 ${isMenuOpen ? "opacity-100": "opacity-0"}`}>
 
             <a className="hover:text-gray-500 hover:scale-110 transition-all" href="#home">Home</a>
             <a className="hover:text-gray-500 hover:scale-110 transition-all" href="#skill">Skill</a>

@@ -15,11 +15,7 @@ const Contact = () => {
           className="w-8 h-8 hover:text-blue-700 cursor-pointer hover:scale-110 transition-all"
           />
           </a>
-          <a href="https://github.com/UdomHorn/">
-          <FontAwesomeIcon icon={faGithub}
-          className="w-8 h-8 hover:text-white cursor-pointer hover:scale-110 transition-all"
-          />
-          </a>
+          
           <a href="https://www.linkedin.com/in/horn-udom-9a66b52aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">
           <FontAwesomeIcon icon={faLinkedin}
           className="w-8 h-8 hover:text-blue-700 cursor-pointer hover:scale-110 transition-all"
