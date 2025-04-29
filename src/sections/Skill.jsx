@@ -1,6 +1,20 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHtml5,faCss3,faJs,faReact,faCss,faGithub, faCcAmazonPay,} from "@fortawesome/free-brands-svg-icons"
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons"
+import React from 'react'
+const SkillCard =({icon, title, subtitle})=>{
+  return(
+    <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
+<FontAwesomeIcon icon={icon}
+className="w-8 h-8 ml-1  "
+/>
+<div className="">
+<p className=" font-bold  ">{title}</p>
+<p className="font-medium text-lg  text-gray-600 ">{subtitle}</p>
+</div>
+</div>
+  )
+}
 const Skill = () => {
   return (
     <div id="skill" className=" sm:px-16 px-8 pt-28 font-Inter">
@@ -12,16 +26,22 @@ const Skill = () => {
       <marquee behavior="" direction="" >
       <div className=" gap-8 m-4 flex  " >
 
+<SkillCard icon={faHtml5} title="HTML" subtitle="Markup Language" />
+<SkillCard icon={faCss3} title="CSS" subtitle="User Interface" />
+<SkillCard icon={faJs} title="Java Script" subtitle="Interactive" />
+<SkillCard icon={faReact} title="React Js" subtitle="Frame Work" />
+<SkillCard icon={faCss} title="Tailwind" subtitle="Frame Work" />
+<SkillCard icon={faGithub} title="Github" subtitle="Version Control" />
+{/* 
 <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
 <FontAwesomeIcon icon={faHtml5}
-className="w-8 h-8 ml-1 hover:text-orange-600 "
+className="w-8 h-8 ml-1 hover:text-blue-500 "
 />
-<div className="">
-<p className=" font-bold  ">HTML</p>
-<p className="font-medium text-lg  text-gray-600 ">Structure</p>
+<div>
+<p className=" font-bold ">HTML</p>
+<p className="font-medium text-lg  text-gray-600 ">Markup Language</p>
 </div>
 </div>
-
 <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
 <FontAwesomeIcon icon={faCss3}
 className="w-8 h-8 ml-1 hover:text-blue-500 "
@@ -70,7 +90,7 @@ className="w-8 h-8 ml-1 hover:text-white"
 <p className=" font-bold ">Github</p>
 <p className="font-medium text-lg  text-gray-600 ">Version Control </p>
 </div>
-</div>
+</div> */}
 
 
 

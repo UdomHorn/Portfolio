@@ -1,6 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHtml5,faCss3,faJs,faReact,faCss,faGithub, faYoutube} from "@fortawesome/free-brands-svg-icons"
-
+const ProjectCard =({icon, title, subtitle})=>{
+  return (
+      <div className="w-80 h-80 flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
+        
+      </div>
+  )
+}
 const Project = () => {
   return (
     <div id="project" className="font-Inter sm:px-16 px-8 pt-28">
@@ -13,9 +19,15 @@ const Project = () => {
                 <div  className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
                 
                       <div className=" gap-8 m-4 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 " >
-            
 
-                      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-300 p-4 hover:scale-105 transition-all">
+                        <ProjectCard/>
+                        <ProjectCard/>
+                        <ProjectCard/>
+                        <ProjectCard/>
+                        <ProjectCard/>
+                        <ProjectCard/>
+
+                      {/* <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-300 p-4 hover:scale-105 transition-all">
         <div title="Facebook Profile">
         <p className=" font-bold ">HTML CSS Only Mobile Responsive</p>
         <a href="https://facebook-kappa-steel.vercel.app/">
@@ -41,7 +53,7 @@ const Project = () => {
                         </a>
                         </div>
                       </div>
-              
+               */}
                       
 
                 {/* 
