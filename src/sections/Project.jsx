@@ -42,17 +42,17 @@ const Project = () => {
 
             <div className=" gap-8 m-4 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 " >
 
-              <ProjectCard src={facebook} title="This is my really first project that I build after I finished HTML and CSS course " href="https://facebook-kappa-steel.vercel.app/" />
+              {/* <ProjectCard src={facebook} title="This is my really first project that I build after I finished HTML and CSS course " href="https://facebook-kappa-steel.vercel.app/" /> */}
 
-              <ProjectCard src={onepiece} title="This one kinda small and keep learning... " href="https://one-piece-ruby-beta.vercel.app/" />
+              {/* <ProjectCard src={onepiece} title="This one kinda small and keep learning... " href="https://one-piece-ruby-beta.vercel.app/" /> */}
+              {/* 
+              <ProjectCard src={sabaynews} title="This one is better but still only use HTML and CSS " href="https://sabay-news-one.vercel.app/" /> */}
 
-              <ProjectCard src={sabaynews} title="This one is better but still only use HTML and CSS " href="https://sabay-news-one.vercel.app/" />
+              {/* <ProjectCard src={portfolio} title="Let's lern React and build our first portfolio website" href="https://portfolio-genus-projects.vercel.app/" /> */}
 
-              <ProjectCard src={portfolio} title="Let's lern React and build our first portfolio website" href="https://portfolio-genus-projects.vercel.app/" />
+              <ProjectCard src={camboreport} title=" Cambo-report (No API)" href="https://cambo-report.vercel.app/" />
 
-              <ProjectCard src={camboreport} title="Let clone any project and put in our portfolio  " href="https://cambo-report.vercel.app/" />
-
-              <ProjectCard src={ten11} title="Let's go deeper with React and clone any e-commerce webside and put in  our portfolio" href="https://ten11-kappa.vercel.app/" />
+              <ProjectCard src={ten11} title="Ten11   (unfinished)" href="https://ten11-kappa.vercel.app/" />
 
 
 
