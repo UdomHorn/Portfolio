@@ -5,6 +5,7 @@ import facebook from "../assets/facebook.jpg"
 import camboreport from "../assets/cambo-report.jpg"
 import sabaynews from "../assets/sabay-news.jpg"
 import ten11 from "../assets/ten11.jpg"
+import studentlist from "../assets/StudentList.png"
 import portfolio from "../assets/portfolio.jpg"
 import onepiece from "../assets/onepiece.jpg"
 const ProjectCard = ({ src, title, href }) => {
@@ -42,6 +43,7 @@ const Project = () => {
 
             <div className=" gap-8 m-4 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 " >
 
+
               {/* <ProjectCard src={facebook} title="This is my really first project that I build after I finished HTML and CSS course " href="https://facebook-kappa-steel.vercel.app/" /> */}
 
               {/* <ProjectCard src={onepiece} title="This one kinda small and keep learning... " href="https://one-piece-ruby-beta.vercel.app/" /> */}
@@ -50,9 +52,12 @@ const Project = () => {
 
               {/* <ProjectCard src={portfolio} title="Let's lern React and build our first portfolio website" href="https://portfolio-genus-projects.vercel.app/" /> */}
 
-              <ProjectCard src={camboreport} title=" Cambo-report (No API)" href="https://cambo-report.vercel.app/" />
+              <ProjectCard src={studentlist} title="Student_List" href="https://student-list-drab.vercel.app/" />
 
-              <ProjectCard src={ten11} title="Ten11   (unfinished)" href="https://ten11-kappa.vercel.app/" />
+
+              <ProjectCard src={camboreport} title=" Cambo-report" href="https://cambo-report.vercel.app/" />
+
+              <ProjectCard src={ten11} title="Ten11" href="https://ten11-kappa.vercel.app/" />
 
 
 
