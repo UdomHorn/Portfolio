@@ -1,13 +1,7 @@
-import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
-import facebook from "../assets/facebook.jpg"
 import camboreport from "../assets/cambo-report.jpg"
-import sabaynews from "../assets/sabay-news.jpg"
 import ten11 from "../assets/ten11.jpg"
-import studentlist from "../assets/studentList.png"
-import portfolio from "../assets/portfolio.jpg"
-import onepiece from "../assets/onepiece.jpg"
 import plovdev from "../assets/Plovdev.jpg"
 const ProjectCard = ({ src, title, description, href }) => {
   return (

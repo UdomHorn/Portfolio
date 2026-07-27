@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faFacebookSquare, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons"
+import { faFacebookSquare, faLinkedin, faTelegram} from "@fortawesome/free-brands-svg-icons"
 const Contact = () => {
   return (
     <div id="contact" className=" font-Inter sm:px-16 px-8 pt-28 pb-28 sm:pb-56">

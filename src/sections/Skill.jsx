@@ -1,7 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faHtml5,faCss3,faJs,faReact,faCss,faGithub, faCcAmazonPay,} from "@fortawesome/free-brands-svg-icons"
-import { faCartPlus } from "@fortawesome/free-solid-svg-icons"
-import React from 'react'
+import { faHtml5,faCss3,faJs,faReact,faCss,faGithub} from "@fortawesome/free-brands-svg-icons"
 const SkillCard =({icon, title, subtitle})=>{
   return(
     <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all">
@@ -23,7 +21,7 @@ const Skill = () => {
       
       <div  className=" bg-gray-100 rounded-md pt-8 py-8 ">
 
-      <marquee behavior="" direction="" >
+      <marquee>
       <div className=" gap-8 m-4 flex  " >
 
 <SkillCard icon={faHtml5} title="HTML" subtitle="Markup Language" />
