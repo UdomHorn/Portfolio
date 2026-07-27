@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        Inter: ["Inter", "sans-serif"],
+        Jakarta: ["'Plus Jakarta Sans'", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }

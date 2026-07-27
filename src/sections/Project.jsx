@@ -3,18 +3,72 @@ import { faUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
 import camboreport from "../assets/cambo-report.jpg"
 import ten11 from "../assets/ten11.jpg"
 import plovdev from "../assets/Plovdev.jpg"
-const ProjectCard = ({ src, title, description, href }) => {
+import devclothes from "../assets/Devclothes.jpg"
+const projects = [
+  {
+    title: "Cambo-report",
+    description: "Clone cambo-report news report and content distribution platform.",
+    features: [
+      "Built with React.js & Tailwind CSS",
+      "Responsive article grid & list layouts",
+      "Category navigation & search filtering"
+    ],
+    href: "https://cambo-report.vercel.app/",
+    src: camboreport,
+  },
+  {
+    title: "Ten11",
+    description: "Clone ten11 app, modern e-commerce concept store.",
+    features: [
+      "Built with React.js & Tailwind CSS",
+      "Modern clothing grids & collection filters",
+      "State-managed responsive shopping cart"
+    ],
+    href: "https://ten11-kappa.vercel.app/",
+    src: ten11,
+  },
+  {
+    title: "Devclothes",
+    description: "An interactive e-commerce shop with online payment integration.",
+    features: [
+      "React, Node, Express, PostgreSQL",
+      "Secure Stripe checkout & payment system",
+      "Resend API email auth & bot alert notifications",
+      "Admin panel for product/order tracking"
+    ],
+    href: "https://e-commerce-payment-31kr.onrender.com",
+    src: devclothes,
+  },
+  {
+    title: "PlovDev",
+    description: "E-learning platform connecting students to job opportunities.",
+    features: [
+      "React, Node, Express, PostgreSQL",
+      "Course enrollment system & dashboards",
+      "Career matching, resume building & job board"
+    ],
+    href: "https://www.plovdev.site/",
+    src: plovdev,
+  }
+];
+
+const ProjectCard = ({ src, title, description, features, href }) => {
   return (
-    <div className="w-80 h-[350px] border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all font-medium text-lg  text-gray-600 relative " >
+    <div className="w-80 min-h-[350px] h-auto border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all font-medium text-lg text-gray-600 relative pb-6" >
 
       <img src={src} alt="" />
       <div className='mt-4 '>
         <p className="font-bold text-black">{title}</p>
         <p className="text-sm text-gray-500 mt-1">{description}</p>
+        <ul className="text-xs text-gray-500 mt-2 list-disc pl-4 space-y-1 text-start">
+          {features.map((feature, i) => (
+            <li key={i}>{feature}</li>
+          ))}
+        </ul>
       </div>
 
       <a href={href} target="_blank" rel="noopener noreferrer" className='absolute flex justify-center items-center w-full h-full  top-0 left-0  opacity-0 hover:opacity-100 bg-black text-white'>
-        <div className='absolute flex justify-center items-center w-full h-full  top-0 left-0  opacity-0 hover:opacity-100 bg-black text-white'>
+        <div className='absolute flex justify-center items-center w-full h-full  top-0 left-0  opacity-0 hover:opacity-100 bg-black text-white rounded-md'>
           <div className='flex justify-center items-center gap-2'>
             Explore
             <FontAwesomeIcon icon={faUpRightFromSquare} />
@@ -22,101 +76,24 @@ const ProjectCard = ({ src, title, description, href }) => {
         </div>
       </a>
     </div>
-
   )
 }
 
 const Project = () => {
   return (
     <div id="project" className="font-Inter sm:px-16 px-8 pt-28">
-      <h1 className="  text-4xl font-medium pb-8 text-black flex justify-center ">Project Hightlights </h1>
+      <h1 className="  text-4xl font-medium pb-8 text-black flex justify-center ">Project Highlights </h1>
 
       <div className="flex  justify-center items-center  bg-gray-100 rounded-md px-8 py-8 ">
 
         <div className=" m-4 " >
-          <p className="font-medium text-lg mt-4  text-black text-center ">Project Exprience</p><span className="flex justify-center underline text-sm text-gray-600 ">Click on each item to explore</span>
+          <p className="font-medium text-lg mt-4  text-black text-center ">Project Experience</p><span className="flex justify-center underline text-sm text-gray-600 ">Click on each item to explore</span>
           <div className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
 
             <div className=" gap-8 m-4 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 " >
-
-
-              {/* <ProjectCard src={facebook} title="This is my really first project that I build after I finished HTML and CSS course " href="https://facebook-kappa-steel.vercel.app/" />
-
-              <ProjectCard src={onepiece} title="This one kinda small and keep learning... " href="https://one-piece-ruby-beta.vercel.app/" />
-              <ProjectCard src={sabaynews} title="This one is better but still only use HTML and CSS " href="https://sabay-news-one.vercel.app/" />
-
-              <ProjectCard src={portfolio} title="Let's lern React and build our first portfolio website" href="https://portfolio-genus-projects.vercel.app/" />
-
-              <ProjectCard src={studentlist} title="Student_List" href="https://student-list-drab.vercel.app/" /> */}
-
-
-              <ProjectCard src={camboreport} title="Cambo-report" description="Clone cambo-report news report and content distribution platform." href="https://cambo-report.vercel.app/" />
-              <ProjectCard src={ten11} title="Ten11" description="Clone ten11 app, modern e-commerce concept store." href="https://ten11-kappa.vercel.app/" />
-              {/* <ProjectCard src={ten11} title="Devclothes" description="An interactive e-commerce shop with online payment integration." href="https://e-commerce-payment-31kr.onrender.com" /> */}
-              <ProjectCard src={plovdev} title="PlovDev" description="E-learnig  platform connect with job opportunity." href="https://www.plovdev.site/" />
-
-
-
-
-              {/* <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-300 p-4 hover:scale-105 transition-all">
-        <div title="Facebook Profile">
-        <p className=" font-bold ">HTML CSS Only Mobile Responsive</p>
-        <a href="https://facebook-kappa-steel.vercel.app/">
-          <img src="facebook-app-symbol.png"alt="" />
-        </a>
-        </div>
-      </div>
-
-      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-300 p-4 hover:scale-105 transition-all">
-                        <div title="University Website">
-                        <p className=" font-bold ">HTML CSS Following Tutorial</p>
-                        <a href="https://edford-web.vercel.app/">
-                          <img src="education.png"alt="" />
-                        </a>
-                        </div>
-                      </div>
-
-      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-red-100 p-4 hover:scale-105 transition-all">
-                        <div title="Nike Website">
-                        <p className=" font-bold ">React Js and Tailwind Responsive</p>
-                        <a href="https://my-nike-jet.vercel.app/">
-                          <img src="basketball.png"alt="" />
-                        </a>
-                        </div>
-                      </div>
-               */}
-
-
-              {/* 
-                
-                      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
-                        <div>
-                        <p className=" font-bold ">Telegram Clone(Coming Soon...)</p>
-                        <a href="">
-                          <img src="telegram.png"alt="" />
-                        </a>
-                        </div>
-                      </div>
-                
-                      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
-        <div>
-        <p className=" font-bold ">Amazon Clone (Coming Soon...)</p>
-        <a href="">
-          <img src="logo.png"alt="" />
-        </a>
-        </div>
-      </div>
-
-      <div className=" flex justify-start items-center gap-2 border-solid border-2 border-black rounded-md w-80 cursor-pointer hover:shadow-md hover:bg-gray-200 p-4">
-                        <div title="HTML CSS and Responsive">
-                        <p className=" font-bold ">YouTube Clone (Coming soon...)</p>
-                        <a href="">
-                          <img src="youtube.png"alt="" />
-                        </a>
-                        </div>
-                      </div>
-                    */}
-
+              {projects.map((project, index) => (
+                <ProjectCard key={index} {...project} />
+              ))}
             </div>
           </div>
         </div>
