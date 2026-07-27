@@ -8,13 +8,15 @@ import ten11 from "../assets/ten11.jpg"
 import studentlist from "../assets/studentList.png"
 import portfolio from "../assets/portfolio.jpg"
 import onepiece from "../assets/onepiece.jpg"
-const ProjectCard = ({ src, title, href }) => {
+import plovdev from "../assets/Plovdev.jpg"
+const ProjectCard = ({ src, title, description, href }) => {
   return (
     <div className="w-80 h-[350px] border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all font-medium text-lg  text-gray-600 relative " >
 
       <img src={src} alt="" />
       <div className='mt-4 '>
-        {title}
+        <p className="font-bold text-black">{title}</p>
+        <p className="text-sm text-gray-500 mt-1">{description}</p>
       </div>
 
       <a href={href} target="_blank" rel="noopener noreferrer" className='absolute flex justify-center items-center w-full h-full  top-0 left-0  opacity-0 hover:opacity-100 bg-black text-white'>
@@ -38,26 +40,26 @@ const Project = () => {
       <div className="flex  justify-center items-center  bg-gray-100 rounded-md px-8 py-8 ">
 
         <div className=" m-4 " >
-          <p className="font-medium text-lg mt-4  text-black text-center ">Works that I've done.</p><span className="flex justify-center underline text-sm text-gray-600 ">Click on each item to explore</span>
+          <p className="font-medium text-lg mt-4  text-black text-center ">Project Exprience</p><span className="flex justify-center underline text-sm text-gray-600 ">Click on each item to explore</span>
           <div className="flex max-md:flex-col justify-center items-center bg-gray-100 rounded-md pt-8 py-8 ">
 
             <div className=" gap-8 m-4 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 " >
 
 
-              {/* <ProjectCard src={facebook} title="This is my really first project that I build after I finished HTML and CSS course " href="https://facebook-kappa-steel.vercel.app/" /> */}
+              {/* <ProjectCard src={facebook} title="This is my really first project that I build after I finished HTML and CSS course " href="https://facebook-kappa-steel.vercel.app/" />
 
-              {/* <ProjectCard src={onepiece} title="This one kinda small and keep learning... " href="https://one-piece-ruby-beta.vercel.app/" /> */}
-              {/* 
-              <ProjectCard src={sabaynews} title="This one is better but still only use HTML and CSS " href="https://sabay-news-one.vercel.app/" /> */}
+              <ProjectCard src={onepiece} title="This one kinda small and keep learning... " href="https://one-piece-ruby-beta.vercel.app/" />
+              <ProjectCard src={sabaynews} title="This one is better but still only use HTML and CSS " href="https://sabay-news-one.vercel.app/" />
 
-              {/* <ProjectCard src={portfolio} title="Let's lern React and build our first portfolio website" href="https://portfolio-genus-projects.vercel.app/" /> */}
+              <ProjectCard src={portfolio} title="Let's lern React and build our first portfolio website" href="https://portfolio-genus-projects.vercel.app/" />
 
-              <ProjectCard src={studentlist} title="Student_List" href="https://student-list-drab.vercel.app/" />
+              <ProjectCard src={studentlist} title="Student_List" href="https://student-list-drab.vercel.app/" /> */}
 
 
-              <ProjectCard src={camboreport} title=" Cambo-report" href="https://cambo-report.vercel.app/" />
-
-              <ProjectCard src={ten11} title="Ten11" href="https://ten11-kappa.vercel.app/" />
+              <ProjectCard src={camboreport} title="Cambo-report" description="Clone cambo-report news report and content distribution platform." href="https://cambo-report.vercel.app/" />
+              <ProjectCard src={ten11} title="Ten11" description="Clone ten11 app, modern e-commerce concept store." href="https://ten11-kappa.vercel.app/" />
+              {/* <ProjectCard src={ten11} title="Devclothes" description="An interactive e-commerce shop with online payment integration." href="https://e-commerce-payment-31kr.onrender.com" /> */}
+              <ProjectCard src={plovdev} title="PlovDev" description="E-learnig  platform connect with job opportunity." href="https://www.plovdev.site/" />
 
 
 
