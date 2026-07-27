@@ -7,6 +7,7 @@ import devclothes from "../assets/Devclothes.jpg"
 const projects = [
   {
     title: "Cambo-report",
+    type: "Clone Project",
     description: "Clone cambo-report news report and content distribution platform.",
     features: [
       "Built with React.js & Tailwind CSS",
@@ -18,6 +19,7 @@ const projects = [
   },
   {
     title: "Ten11",
+    type: "Clone Project",
     description: "Clone ten11 app, modern e-commerce concept store.",
     features: [
       "Built with React.js & Tailwind CSS",
@@ -29,6 +31,7 @@ const projects = [
   },
   {
     title: "Devclothes",
+    type: "Personal Project",
     description: "An interactive e-commerce shop with online payment integration.",
     features: [
       "React, Node, Express, PostgreSQL",
@@ -41,6 +44,7 @@ const projects = [
   },
   {
     title: "PlovDev",
+    type: "Team Project",
     description: "E-learning platform connecting students to job opportunities.",
     features: [
       "React, Node, Express, PostgreSQL",
@@ -52,14 +56,15 @@ const projects = [
   }
 ];
 
-const ProjectCard = ({ src, title, description, features, href }) => {
+const ProjectCard = ({ src, title, type, description, features, href }) => {
   return (
     <div className="w-80 min-h-[350px] h-auto border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all font-medium text-lg text-gray-600 relative pb-6" >
 
       <img src={src} alt="" />
       <div className='mt-4 '>
         <p className="font-bold text-black">{title}</p>
-        <p className="text-sm text-gray-500 mt-1">{description}</p>
+        <p className="text-xs text-gray-400 font-bold uppercase mt-0.5">{type}</p>
+        <p className="text-sm text-gray-500 mt-2">{description}</p>
         <ul className="text-xs text-gray-500 mt-2 list-disc pl-4 space-y-1 text-start">
           {features.map((feature, i) => (
             <li key={i}>{feature}</li>
