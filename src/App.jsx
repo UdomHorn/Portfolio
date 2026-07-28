@@ -7,9 +7,10 @@ import Nav from "./components/Nav";
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
-      easing: "ease-in-out",
+      duration: 700,
+      easing: "ease-out-cubic",
       once: true,
+      offset: 100,
     });
   }, []);
 
