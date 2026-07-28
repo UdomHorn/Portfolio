@@ -55,11 +55,11 @@ const toolsAndApis = [
 const Skill = () => {
   return (
     <div id="skill" className="sm:px-16 px-8 pt-28 font-Inter">
-      <h1 className="text-4xl font-medium pb-8 text-black flex justify-center">My Skill</h1>
+      <h1 className="text-4xl font-medium pb-8 text-black flex justify-center" data-aos="fade-down">My Skill</h1>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {/* Frontend Category */}
-        <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left">
+        <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left" data-aos="fade-up" data-aos-delay="0">
           <h3 className="font-bold text-black text-lg border-b-2 border-black pb-2">Frontend</h3>
           <div className="flex flex-col gap-3 flex-grow">
             {frontendSkills.map((skill, index) => (
@@ -69,7 +69,7 @@ const Skill = () => {
         </div>
 
         {/* Backend Category */}
-        <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left">
+        <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left" data-aos="fade-up" data-aos-delay="150">
           <h3 className="font-bold text-black text-lg border-b-2 border-black pb-2">Backend</h3>
           <div className="flex flex-col gap-3 flex-grow">
             {backendSkills.map((skill, index) => (
@@ -79,7 +79,7 @@ const Skill = () => {
         </div>
 
         {/* Tools & APIs Category */}
-        <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left">
+        <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left" data-aos="fade-up" data-aos-delay="300">
           <h3 className="font-bold text-black text-lg border-b-2 border-black pb-2">APIs & Tools</h3>
           <div className="flex flex-col gap-3 flex-grow">
             {toolsAndApis.map((skill, index) => (

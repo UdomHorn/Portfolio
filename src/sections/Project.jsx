@@ -4,6 +4,8 @@ import camboreport from "../assets/cambo-report.jpg"
 import ten11 from "../assets/ten11.jpg"
 import plovdev from "../assets/Plovdev.jpg"
 import devclothes from "../assets/Devclothes.jpg"
+import miniAiAssistant from "../assets/mini-ai-assistant.jpg"
+import movieApp from "../assets/movie.jpg"
 const projects = [
   {
     title: "Cambo-report",
@@ -53,12 +55,36 @@ const projects = [
     ],
     href: "https://www.plovdev.site/",
     src: plovdev,
+  },
+  {
+    title: "Mini AI Assistant",
+    type: "Personal Project",
+    description: "An intelligent chatbot assistant powered by Gemini API, designed for dynamic user conversation.",
+    features: [
+      "Built with HTML, CSS & JavaScript",
+      "Seamless integration with Gemini AI API",
+      "Real-time conversational streaming & prompt history"
+    ],
+    href: "https://mini-ai-assistant-2123.onrender.com/",
+    src: miniAiAssistant,
+  },
+  {
+    title: "Movie App",
+    type: "Personal Project",
+    description: "A comprehensive movie dashboard with detailed search, filter options, and rating displays.",
+    features: [
+      "Built with React.js & Tailwind CSS",
+      "Dynamic movie search and filtering via TMDB API",
+      "Responsive rating cards and interactive trailer modals"
+    ],
+    href: "https://movie-app-62j6.vercel.app/",
+    src: movieApp,
   }
 ];
 
-const ProjectCard = ({ src, title, type, description, features, href }) => {
+const ProjectCard = ({ src, title, type, description, features, href, index }) => {
   return (
-    <div className="w-80 min-h-[350px] h-auto border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all font-medium text-lg text-gray-600 relative pb-6" >
+    <div className="w-80 min-h-[350px] h-auto border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all font-medium text-lg text-gray-600 relative pb-6" data-aos="fade-up" data-aos-delay={(index % 3) * 150} >
 
       <img src={src} alt="" />
       <div className='mt-4 '>
@@ -87,7 +113,7 @@ const ProjectCard = ({ src, title, type, description, features, href }) => {
 const Project = () => {
   return (
     <div id="project" className="font-Inter sm:px-16 px-8 pt-28">
-      <h1 className="  text-4xl font-medium pb-8 text-black flex justify-center ">Project Highlights </h1>
+      <h1 className="  text-4xl font-medium pb-8 text-black flex justify-center " data-aos="fade-down">Project Highlights </h1>
 
       <div className="flex  justify-center items-center  bg-gray-100 rounded-md px-8 py-8 ">
 
@@ -97,7 +123,7 @@ const Project = () => {
 
             <div className=" gap-8 m-4 grid sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 " >
               {projects.map((project, index) => (
-                <ProjectCard key={index} {...project} />
+                <ProjectCard key={index} {...project} index={index} />
               ))}
             </div>
           </div>
