@@ -8,28 +8,18 @@ import miniAiAssistant from "../assets/mini-ai-assistant.jpg"
 import movieApp from "../assets/movie.jpg"
 const projects = [
   {
-    title: "Cambo-report",
-    type: "Clone Project",
-    description: "Clone cambo-report news report and content distribution platform.",
+    title: "PlovDev",
+    type: "Team Project",
+    description: "E-learning platform connecting students to job opportunities.",
     features: [
-      "Built with React.js & Tailwind CSS",
-      "Responsive article grid & list layouts",
-      "Category navigation & search filtering"
+      "React, Node, Express, PostgreSQL",
+      "Course enrollment system & dashboards",
+      "Career matching, resume building & job board"
     ],
-    href: "https://cambo-report.vercel.app/",
-    src: camboreport,
-  },
-  {
-    title: "Ten11",
-    type: "Clone Project",
-    description: "Clone ten11 app, modern e-commerce concept store.",
-    features: [
-      "Built with React.js & Tailwind CSS",
-      "Modern clothing grids & collection filters",
-      "State-managed responsive shopping cart"
-    ],
-    href: "https://ten11-kappa.vercel.app/",
-    src: ten11,
+    href: "https://www.plovdev.site/",
+    src: plovdev,
+    status: "development",
+    stack: "fullstack"
   },
   {
     title: "Devclothes",
@@ -43,18 +33,36 @@ const projects = [
     ],
     href: "https://e-commerce-payment-31kr.onrender.com",
     src: devclothes,
+    status: "development",
+    stack: "fullstack"
   },
   {
-    title: "PlovDev",
-    type: "Team Project",
-    description: "E-learning platform connecting students to job opportunities.",
+    title: "Ten11",
+    type: "Clone Project",
+    description: "Clone ten11 app, modern e-commerce concept store.",
     features: [
-      "React, Node, Express, PostgreSQL",
-      "Course enrollment system & dashboards",
-      "Career matching, resume building & job board"
+      "Built with React.js & Tailwind CSS",
+      "Modern clothing grids & collection filters",
+      "State-managed responsive shopping cart"
     ],
-    href: "https://www.plovdev.site/",
-    src: plovdev,
+    href: "https://ten11-kappa.vercel.app/",
+    src: ten11,
+    status: "completed",
+    stack: "frontend"
+  },
+  {
+    title: "Cambo-report",
+    type: "Clone Project",
+    description: "Clone cambo-report news report and content distribution platform.",
+    features: [
+      "Built with React.js & Tailwind CSS",
+      "Responsive article grid & list layouts",
+      "Category navigation & search filtering"
+    ],
+    href: "https://cambo-report.vercel.app/",
+    src: camboreport,
+    status: "completed",
+    stack: "frontend"
   },
   {
     title: "Mini AI Assistant",
@@ -67,10 +75,12 @@ const projects = [
     ],
     href: "https://mini-ai-assistant-2123.onrender.com/",
     src: miniAiAssistant,
+    status: "completed",
+    stack: "frontend"
   },
   {
     title: "Movie App",
-    type: "Personal Project",
+    type: "Learning Project",
     description: "A comprehensive movie dashboard with detailed search, filter options, and rating displays.",
     features: [
       "Built with React.js & Tailwind CSS",
@@ -79,17 +89,55 @@ const projects = [
     ],
     href: "https://movie-app-62j6.vercel.app/",
     src: movieApp,
+    status: "completed",
+    stack: "fullstack"
   }
 ];
 
-const ProjectCard = ({ src, title, type, description, features, href, index }) => {
+const statusConfig = {
+  completed: {
+    label: "Completed",
+    className: "bg-black text-white border border-black"
+  },
+  development: {
+    label: "In Dev",
+    className: "bg-white text-gray-400 border border-gray-300"
+  }
+};
+
+const stackConfig = {
+  frontend: {
+    label: "Frontend",
+    className: "bg-white text-black border border-black"
+  },
+  fullstack: {
+    label: "Full Stack",
+    className: "bg-gray-200 text-black border border-black"
+  }
+};
+
+const ProjectCard = ({ src, title, type, description, features, href, status, stack, index }) => {
   return (
     <div className="w-80 min-h-[350px] h-auto border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all font-medium text-lg text-gray-600 relative pb-6" data-aos="fade-up" data-aos-delay={(index % 3) * 150} >
 
       <img src={src} alt="" />
       <div className='mt-4 '>
         <p className="font-bold text-black">{title}</p>
-        <p className="text-xs text-gray-400 font-bold uppercase mt-0.5">{type}</p>
+        <div className="flex justify-between items-center mt-1">
+          <p className="text-xs text-gray-400 font-bold uppercase">{type}</p>
+          <div className="flex gap-1.5 items-center">
+            {stack && stackConfig[stack] && (
+              <span className={`inline-flex items-center px-2 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide ${stackConfig[stack].className}`}>
+                {stackConfig[stack].label}
+              </span>
+            )}
+            {status && statusConfig[status] && (
+              <span className={`inline-flex items-center px-2 py-0.5 rounded text-[9px] font-extrabold uppercase tracking-wide ${statusConfig[status].className}`}>
+                {statusConfig[status].label}
+              </span>
+            )}
+          </div>
+        </div>
         <p className="text-sm text-gray-500 mt-2">{description}</p>
         <ul className="text-xs text-gray-500 mt-2 list-disc pl-4 space-y-1 text-start">
           {features.map((feature, i) => (
