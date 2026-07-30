@@ -12,21 +12,20 @@ const projects = [
     type: "Team Project",
     description: "E-learning platform connecting students to job opportunities.",
     features: [
-      "React, Node, Express, PostgreSQL",
       "Course enrollment system & dashboards",
       "Career matching, resume building & job board"
     ],
     href: "https://www.plovdev.site/",
     src: plovdev,
     status: "development",
-    stack: "fullstack"
+    stack: "fullstack",
+    tech: ["React", "Node.js", "Express.js", "PostgreSQL"]
   },
   {
     title: "Devclothes",
     type: "Personal Project",
     description: "An interactive e-commerce shop with online payment integration.",
     features: [
-      "React, Node, Express, PostgreSQL",
       "Secure Stripe checkout & payment system",
       "Resend API email auth & bot alert notifications",
       "Admin panel for product/order tracking"
@@ -34,63 +33,64 @@ const projects = [
     href: "https://e-commerce-payment-31kr.onrender.com",
     src: devclothes,
     status: "development",
-    stack: "fullstack"
+    stack: "fullstack",
+    tech: ["React", "Node.js", "Express.js", "Stripe", "Resend API", "PostgreSQL"]
   },
   {
     title: "Ten11",
     type: "Clone Project",
     description: "Clone ten11 app, modern e-commerce concept store.",
     features: [
-      "Built with React.js & Tailwind CSS",
       "Modern clothing grids & collection filters",
       "State-managed responsive shopping cart"
     ],
     href: "https://ten11-kappa.vercel.app/",
     src: ten11,
     status: "completed",
-    stack: "frontend"
+    stack: "frontend",
+    tech: ["React", "Tailwind CSS"]
   },
   {
     title: "Cambo-report",
     type: "Clone Project",
     description: "Clone cambo-report news report and content distribution platform.",
     features: [
-      "Built with React.js & Tailwind CSS",
       "Responsive article grid & list layouts",
       "Category navigation & search filtering"
     ],
     href: "https://cambo-report.vercel.app/",
     src: camboreport,
     status: "completed",
-    stack: "frontend"
+    stack: "frontend",
+    tech: ["React", "Tailwind CSS"]
   },
   {
     title: "Mini AI Assistant",
     type: "Personal Project",
     description: "An intelligent chatbot assistant powered by Gemini API, designed for dynamic user conversation.",
     features: [
-      "Built with HTML, CSS & JavaScript",
       "Seamless integration with Gemini AI API",
       "Real-time conversational streaming & prompt history"
     ],
     href: "https://mini-ai-assistant-2123.onrender.com/",
     src: miniAiAssistant,
     status: "completed",
-    stack: "frontend"
+    stack: "frontend",
+    tech: ["HTML", "CSS", "JavaScript", "Gemini API"]
   },
   {
     title: "Movie App",
     type: "Learning Project",
     description: "A comprehensive movie dashboard with detailed search, filter options, and rating displays.",
     features: [
-      "Built with React.js & Tailwind CSS",
       "Dynamic movie search and filtering via TMDB API",
       "Responsive rating cards and interactive trailer modals"
     ],
     href: "https://movie-app-62j6.vercel.app/",
     src: movieApp,
     status: "completed",
-    stack: "fullstack"
+    stack: "fullstack",
+    tech: ["React", "Tailwind CSS", "TMDB API"]
   }
 ];
 
@@ -116,7 +116,7 @@ const stackConfig = {
   }
 };
 
-const ProjectCard = ({ src, title, type, description, features, href, status, stack, index }) => {
+const ProjectCard = ({ src, title, type, description, features, href, status, stack, tech, index }) => {
   return (
     <div className="w-80 min-h-[350px] h-auto border-solid border-2 border-black rounded-md px-4 cursor-pointer hover:shadow-md hover:bg-gray-300 hover:scale-105 transition-all font-medium text-lg text-gray-600 relative pb-6" data-aos="fade-up" data-aos-delay={(index % 3) * 150} >
 
@@ -144,6 +144,15 @@ const ProjectCard = ({ src, title, type, description, features, href, status, st
             <li key={i}>{feature}</li>
           ))}
         </ul>
+        {tech && (
+          <div className="flex flex-wrap gap-1 mt-3">
+            {tech.map((t, i) => (
+              <span key={i} className="bg-gray-200 text-gray-600 text-[9px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-md">
+                {t}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       <a href={href} target="_blank" rel="noopener noreferrer" className='absolute flex justify-center items-center w-full h-full  top-0 left-0  opacity-0 hover:opacity-100 bg-black text-white'>
