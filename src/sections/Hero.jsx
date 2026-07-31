@@ -9,11 +9,17 @@ const Hero = () => {
       <div className=" bg-gray-100 rounded-md mt-8 p-8">
         <p className="font-medium text-lg  text-gray-600 ">As a <span className="font-bold">Junior Full-Stack Developer</span>, I&apos;m passionate about building modern, scalable web applications using React, Tailwind CSS, and Node.js. I enjoy turning ideas into intuitive, high-performance products and continuously improving my skills to deliver impactful solutions within a collaborative team.</p>
       </div>
-      <div className="mt-6">
+      <div className="mt-6 flex flex-wrap gap-4">
+        <a 
+          href="#cv-section" 
+          className="inline-block bg-black text-white px-6 py-3 rounded-md font-medium text-lg hover:bg-gray-800 hover:scale-105 transition-all shadow-sm hover:shadow-md"
+        >
+          View Resume
+        </a>
         <a 
           href="/Horn Udom Resume.pdf" 
           download="Udom_Horn_Resume.pdf" 
-          className="inline-block bg-black text-white px-6 py-3 rounded-md font-medium text-lg hover:bg-gray-800 hover:scale-105 transition-all shadow-sm hover:shadow-md"
+          className="inline-block bg-white text-black border-2 border-black px-6 py-[10px] rounded-md font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all shadow-sm hover:shadow-md"
         >
           Download Resume
         </a>

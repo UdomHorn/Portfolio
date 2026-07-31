@@ -10,10 +10,10 @@ const projects = [
   {
     title: "PlovDev",
     type: "Team Project",
-    description: "E-learning platform connecting students to job opportunities.",
+    description: "E-learning platform providing programming courses and developer job listings.",
     features: [
-      "Course enrollment system & dashboards",
-      "Career matching, resume building & job board"
+      "Course enrollment system & learning dashboards",
+      "Developer job board featuring active tech opportunities"
     ],
     href: "https://www.plovdev.site/",
     src: plovdev,
@@ -89,7 +89,7 @@ const projects = [
     href: "https://movie-app-62j6.vercel.app/",
     src: movieApp,
     status: "completed",
-    stack: "fullstack",
+    stack: "frontend",
     tech: ["React", "Tailwind CSS", "TMDB API"]
   }
 ];
