@@ -6,7 +6,6 @@ import plovdev from "../assets/Plovdev.jpg"
 import devclothes from "../assets/Devclothes.jpg"
 import miniAiAssistant from "../assets/mini-ai-assistant.jpg"
 import movieApp from "../assets/movie.jpg"
-import qaAutomationDashboard from "../assets/qa-automation-dashboard.png"
 
 const projects = [
   {
@@ -38,21 +37,6 @@ const projects = [
     status: "development",
     stack: "fullstack",
     tech: ["React", "Node.js", "Express.js", "Stripe", "Resend API", "Cypress", "PostgreSQL"]
-  },
-  {
-    title: "QA Automation Framework",
-    type: "Personal Project",
-    description: "A comprehensive E2E automation and API testing framework simulating real-world regression cycles.",
-    features: [
-      "Designed robust Playwright E2E UI automation test suites for user onboarding and shopping carts",
-      "Integrated Postman collections and contract testing for RESTful API services",
-      "Configured automated GitHub Actions workflows to run test regressions on pull requests"
-    ],
-    href: "https://github.com/UdomHorn/",
-    src: qaAutomationDashboard,
-    status: "completed",
-    stack: "qa",
-    tech: ["Playwright", "Cypress", "Jest", "Postman", "GitHub Actions"]
   },
   {
     title: "Ten11",
@@ -131,10 +115,6 @@ const stackConfig = {
   fullstack: {
     label: "Full Stack",
     className: "bg-gray-200 text-black border border-black"
-  },
-  qa: {
-    label: "QA / Testing",
-    className: "bg-green-100 text-green-800 border border-green-500 font-extrabold"
   }
 };
 
