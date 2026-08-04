@@ -7,7 +7,7 @@ const Hero = () => {
 
       <h1 className="font-bold text-6xl max-xl:text-5xl max-md:text-5xl  text-black ">Hi, I am Udom</h1>
       <div className=" bg-gray-100 rounded-md mt-8 p-8">
-        <p className="font-medium text-lg  text-gray-600 ">As a <span className="font-bold">Junior Full-Stack Developer</span>, I&apos;m passionate about building modern, scalable web applications using React, Tailwind CSS, and Node.js. I enjoy turning ideas into intuitive, high-performance products and continuously improving my skills to deliver impactful solutions within a collaborative team.</p>
+        <p className="font-medium text-lg  text-gray-600 ">As a <span className="font-bold">Junior Full-Stack Developer</span>, I&apos;m passionate about building modern, scalable web applications using React, Tailwind CSS, and Node.js. With a strong focus on software quality and automated testing, I strive to write clean, reliable code backed by robust test coverage. I enjoy turning ideas into high-performance products while continuously expanding my development and QA skill sets.</p>
       </div>
       <div className="mt-6 flex flex-wrap gap-4">
         <a 

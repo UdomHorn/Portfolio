@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faHtml5, faCss3, faJs, faReact, faCss, faGithub, faNodeJs, faGitAlt, faTelegram, faStripe } from "@fortawesome/free-brands-svg-icons"
-import { faDatabase, faServer, faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faDatabase, faServer, faEnvelope, faVial, faRobot, faCheckDouble, faBugSlash } from "@fortawesome/free-solid-svg-icons"
 
 const SkillCard = ({ icon, title, subtitle, color }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -44,6 +44,13 @@ const backendSkills = [
   { icon: faDatabase, title: "PostgreSQL", subtitle: "Database System", color: "#336791" }
 ];
 
+const qaSkills = [
+  { icon: faRobot, title: "Playwright", subtitle: "E2E Automation", color: "#2EAD33" },
+  { icon: faCheckDouble, title: "Cypress", subtitle: "E2E Testing", color: "#00BF88" },
+  { icon: faVial, title: "Jest", subtitle: "Unit Testing", color: "#C21325" },
+  { icon: faBugSlash, title: "Postman", subtitle: "API Testing", color: "#FF6C37" }
+];
+
 const toolsAndApis = [
   { icon: faStripe, title: "Stripe API", subtitle: "Payment Services", color: "#635BFF" },
   { icon: faTelegram, title: "Telegram Bot", subtitle: "Alerts & APIs", color: "#0088CC" },
@@ -57,7 +64,7 @@ const Skill = () => {
     <div id="skill" className="sm:px-16 px-8 pt-28 font-Inter">
       <h1 className="text-4xl font-medium pb-8 text-black flex justify-center" data-aos="fade-down">My Skill</h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
         {/* Frontend Category */}
         <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left" data-aos="fade-up" data-aos-delay="0">
           <h3 className="font-bold text-black text-lg border-b-2 border-black pb-2">Frontend</h3>
@@ -69,10 +76,20 @@ const Skill = () => {
         </div>
 
         {/* Backend Category */}
-        <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left" data-aos="fade-up" data-aos-delay="150">
+        <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left" data-aos="fade-up" data-aos-delay="100">
           <h3 className="font-bold text-black text-lg border-b-2 border-black pb-2">Backend</h3>
           <div className="flex flex-col gap-3 flex-grow">
             {backendSkills.map((skill, index) => (
+              <SkillCard key={index} {...skill} />
+            ))}
+          </div>
+        </div>
+
+        {/* QA & Testing Category */}
+        <div className="border-solid border-2 border-black rounded-md p-6 bg-gray-100 flex flex-col gap-4 text-left" data-aos="fade-up" data-aos-delay="200">
+          <h3 className="font-bold text-black text-lg border-b-2 border-black pb-2">QA & Testing</h3>
+          <div className="flex flex-col gap-3 flex-grow">
+            {qaSkills.map((skill, index) => (
               <SkillCard key={index} {...skill} />
             ))}
           </div>

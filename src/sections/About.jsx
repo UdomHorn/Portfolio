@@ -24,7 +24,7 @@ const About = () => {
       {/* Bio Text */}
       <div className="bg-gray-100 rounded-md p-8 mt-8 w-full max-w-4xl mx-auto" data-aos="fade-up">
         <p className="font-medium text-lg text-gray-600"> Hi my name is <span className="font-bold">Udom</span>, I am a bachelor majoring in Information Technology, Fresh graduate from the Royal University of Phnom Penh since June 2024, and I have been studying at Above and Beyond School as Backend Student graduated in July 2026.</p>
-        <p className="font-medium text-lg text-gray-600 mt-4"> I have taken several courses online and also completed several projects related to web development that demonstrate my ability to turn design concepts into functional and interactive. I am excited to expand my knowledge in web development and beyond.</p>
+        <p className="font-medium text-lg text-gray-600 mt-4"> I have taken several courses online and also completed several projects related to web development that demonstrate my ability to turn design concepts into functional, interactive, and stable applications. I have a strong interest in software quality assurance and automated testing, focusing on creating reliable test suites. I am excited to expand my development and QA skills further.</p>
       </div>
 
       {/* Polaroid Gallery Grid */}
@@ -75,7 +75,8 @@ const About = () => {
             <ul className="list-disc pl-5 text-gray-600 text-sm space-y-1 mt-3">
               <li>Mastered database design, RESTful API architecture, and server management.</li>
               <li>Gained deep knowledge of Node.js, Express.js, PostgreSQL, and security configurations.</li>
-              <li>Collaborated on backend sprint iterations, team code reviews, and API deployments.</li>
+              <li>Integrated unit/integration testing into backend projects to guarantee endpoint reliability.</li>
+              <li>Collaborated on backend sprint iterations, team code reviews, bug debugging, and API deployments.</li>
             </ul>
           </div>
 
