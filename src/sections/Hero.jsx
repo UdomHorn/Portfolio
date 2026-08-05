@@ -17,8 +17,8 @@ const Hero = () => {
           View Resume
         </a>
         <a 
-          href="/Horn Udom Resume.pdf" 
-          download="Udom_Horn_Resume.pdf" 
+          href="/Horn Udom-2026.pdf" 
+          download="Horn_Udom-2026.pdf" 
           className="inline-block bg-white text-black border-2 border-black px-6 py-[10px] rounded-md font-medium text-lg hover:bg-gray-100 hover:scale-105 transition-all shadow-sm hover:shadow-md"
         >
           Download Resume

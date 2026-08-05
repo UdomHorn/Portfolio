@@ -108,14 +108,14 @@ const About = () => {
         <div className="w-full max-w-3xl bg-white rounded-lg overflow-hidden border border-gray-300 shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-shadow duration-300">
           {!usePdfFallback ? (
             <img 
-              src="/Horn Udom Resume.png" 
+              src="/Horn Udom-2026.png" 
               alt="Horn Udom CV / Resume" 
               className="w-full h-auto block"
               onError={() => setUsePdfFallback(true)}
             />
           ) : (
             <iframe 
-              src="/Horn Udom Resume.pdf" 
+              src="/Horn Udom-2026.pdf" 
               width="100%" 
               style={{ border: 'none' }}
               title="Horn Udom Resume PDF"
